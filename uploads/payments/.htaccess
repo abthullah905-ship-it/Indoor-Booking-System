@@ -1,0 +1,11 @@
+# Deny execution of PHP and other script files
+Options -ExecCGI
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+
+<FilesMatch "\.(php|php5|phtml|inc|cgi|pl|py|jsp|asp|sh)$">
+    Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Require all granted
+</FilesMatch>
