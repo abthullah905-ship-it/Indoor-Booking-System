@@ -8,7 +8,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <nav class="navbar">
     <div class="container d-flex justify-content-between align-items-center">
         <a href="<?php echo $base_path; ?>index.php" class="navbar-brand">
-            <img src="<?php echo $base_path; ?>uploads/nav_logo1.png" width="50" height="50" alt="ALS Indoor Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><rect width=\'40\' height=\'40\' fill=\'%235cb85c\'/><text x=\'50%\' y=\'50%\' fill=\'white\' font-family=\'sans-serif\' font-size=\'16\' text-anchor=\'middle\' dominant-baseline=\'middle\'>ALS</text></svg>'">
+            <img src="<?php echo $base_path; ?>https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865006/ivty3iruftjnsk3ymq1d.png" width="50" height="50" alt="ALS Indoor Logo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\'><rect width=\'40\' height=\'40\' fill=\'%235cb85c\'/><text x=\'50%\' y=\'50%\' fill=\'white\' font-family=\'sans-serif\' font-size=\'16\' text-anchor=\'middle\' dominant-baseline=\'middle\'>ALS</text></svg>'">
             ALS Indoor
         </a>
  

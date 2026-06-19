@@ -30,14 +30,14 @@ $stats['hours'] = $stats['bookings'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - ALS Indoor</title>
-    <link rel="icon" href="uploads/nav_logo1.png">
+    <link rel="icon" href="https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865006/ivty3iruftjnsk3ymq1d.png">
     <meta name="base-url" content="/futsalbs">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: url('uploads/ij_cric.png') center/cover no-repeat;
+            background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865001/oeqoy1lvnmbqhwkk3y2q.png') center/cover no-repeat;
             position: relative;
             display: flex;
             align-items: center;
@@ -241,7 +241,7 @@ $stats['hours'] = $stats['bookings'];
     
     <div class="sports-grid" style="margin-top: 3rem;">
         <div class="sport-card text-left">
-            <div class="sport-img" style="background-image: url('uploads/about_football.jpg');"></div>
+            <div class="sport-img" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864950/pyy7hyqslww6cxhlvzor.jpg');"></div>
             <div class="p-4" style="padding: 1.5rem; text-align: left;">
                 <h3 style="margin-bottom: 0.5rem;">Futsal</h3>
                 <p class="text-secondary mb-4" style="margin-bottom: 1.5rem;">FIFA standard artificial turf with shock pads. Perfect for 5v5 or 7v7 matches.</p>
@@ -249,7 +249,7 @@ $stats['hours'] = $stats['bookings'];
             </div>
         </div>
         <div class="sport-card text-left">
-            <div class="sport-img" style="background-image: url('uploads/about_cricket.jpg');"></div>
+            <div class="sport-img" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864943/y3bxdflmbm9ci1zo11fi.jpg');"></div>
             <div class="p-4" style="padding: 1.5rem; text-align: left;">
                 <h3 style="margin-bottom: 0.5rem;">Indoor</h3>
                 <p class="text-secondary mb-4" style="margin-bottom: 1.5rem;">Tension-net enclosed arena with professional synthetic pitch.</p>
@@ -257,7 +257,7 @@ $stats['hours'] = $stats['bookings'];
             </div>
         </div>
         <div class="sport-card text-left">
-            <div class="sport-img" style="background-image: url('uploads/about_badminton.jpg');"></div>
+            <div class="sport-img" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864936/waol1ajylcq3v2jpb9pw.jpg');"></div>
             <div class="p-4" style="padding: 1.5rem; text-align: left;">
                 <h3 style="margin-bottom: 0.5rem;">Padel</h3>
                 <p class="text-secondary mb-4" style="margin-bottom: 1.5rem;">BWF approved synthetic mats with anti-glare professional lighting.</p>
@@ -273,10 +273,10 @@ $stats['hours'] = $stats['bookings'];
     <h2 class="section-title mb-5">Inside ALS Indoor</h2>
     
     <div class="gallery-grid" style="margin-top: 3rem;">
-        <div class="gallery-item" style="background-image: url('uploads/gallery_football1.jpg');"></div>
-        <div class="gallery-item" style="background-image: url('uploads/ij_cric.png');"></div>
-        <div class="gallery-item" style="background-image: url('uploads/Batminton.jpg');"></div>
-        <div class="gallery-item" style="background-image: url('uploads/about_football.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864988/okv7rrjtzvlomg5cvwox.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865001/oeqoy1lvnmbqhwkk3y2q.png');"></div>
+        <div class="gallery-item" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864918/b88zeuzsonjxo4owhtna.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864950/pyy7hyqslww6cxhlvzor.jpg');"></div>
     </div>
 </section>
 

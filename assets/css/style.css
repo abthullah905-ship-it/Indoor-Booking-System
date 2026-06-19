@@ -386,7 +386,7 @@ img {
 .auth-modal { max-width: 800px; display: flex; overflow: hidden; }
 .auth-banner {
     flex: 1;
-    background: var(--dark-navy) url('../uploads/about_football.jpg') center/cover;
+    background: var(--dark-navy) url('../https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864950/pyy7hyqslww6cxhlvzor.jpg') center/cover;
     position: relative;
     color: white;
     padding: 2rem;

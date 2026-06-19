@@ -8,7 +8,7 @@ if (empty($_SESSION['csrf_token'])) {
 ?>
 <div class="modal-overlay" id="auth-modal">
     <div class="modal-content auth-modal">
-        <div class="auth-banner" style="background-image: url('uploads/ij_cric.png');">
+        <div class="auth-banner" style="background-image: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865001/oeqoy1lvnmbqhwkk3y2q.png');">
             <div class="auth-banner-content">
                 <h2 style="color:white; margin-bottom: 1rem;">Join ALS Indoor</h2>
                 <p>Book your favorite courts, manage your profile, and start playing with ease.</p>

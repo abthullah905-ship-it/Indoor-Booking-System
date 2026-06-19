@@ -11,13 +11,13 @@ if (empty($_SESSION['csrf_token'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ALS Indoor</title>
-    <link rel="icon" href="uploads/nav_logo1.png">
+    <link rel="icon" href="https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865006/ivty3iruftjnsk3ymq1d.png">
     <meta name="base-url" content="/futsalbs">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .contact-hero {
             height: 40vh;
-            background: url('uploads/gallery_cricket.jpg') center/cover no-repeat;
+            background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864980/p9kwn3vqdcuhu6ntcw9l.jpg') center/cover no-repeat;
             position: relative;
             display: flex;
             align-items: center;

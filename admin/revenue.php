@@ -47,7 +47,7 @@ $base_path = '../';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revenue Reports - Admin</title>
-    <link rel="icon" href="uploads/nav_logo1.png">
+    <link rel="icon" href="https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865006/ivty3iruftjnsk3ymq1d.png">
     <meta name="base-url" content="/futsalbs">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>

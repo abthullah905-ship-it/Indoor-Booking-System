@@ -8,13 +8,13 @@ $base_path = '';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - ALS Indoor</title>
-    <link rel="icon" href="uploads/nav_logo1.png">
+    <link rel="icon" href="https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781865006/ivty3iruftjnsk3ymq1d.png">
     <meta name="base-url" content="/futsalbs">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .about-hero {
             height: 50vh;
-            background: url('uploads/about_football.jpg') center/cover no-repeat;
+            background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864950/pyy7hyqslww6cxhlvzor.jpg') center/cover no-repeat;
             position: relative;
             display: flex;
             align-items: center;
@@ -104,21 +104,21 @@ $base_path = '';
         <h2 class="section-title mb-5">What We Offer</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             <div class="card p-0" style="overflow: hidden; text-align: left;">
-                <div style="height: 200px; background: url('uploads/about_football.jpg') center/cover;"></div>
+                <div style="height: 200px; background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864950/pyy7hyqslww6cxhlvzor.jpg') center/cover;"></div>
                 <div style="padding: 1.5rem;">
                     <h3 style="margin-bottom: 0.5rem;">Futsal Arena</h3>
                     <p class="text-secondary">FIFA certified turf offering the best grip and shock absorption for fast-paced 5v5 matches.</p>
                 </div>
             </div>
             <div class="card p-0" style="overflow: hidden; text-align: left;">
-                <div style="height: 200px; background: url('uploads/about_cricket.jpg') center/cover;"></div>
+                <div style="height: 200px; background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864943/y3bxdflmbm9ci1zo11fi.jpg') center/cover;"></div>
                 <div style="padding: 1.5rem;">
                     <h3 style="margin-bottom: 0.5rem;">Indoor Cricket</h3>
                     <p class="text-secondary">Fully netted arena with artificial pitch perfect for intense indoor box cricket tournaments.</p>
                 </div>
             </div>
             <div class="card p-0" style="overflow: hidden; text-align: left;">
-                <div style="height: 200px; background: url('uploads/about_badminton.jpg') center/cover;"></div>
+                <div style="height: 200px; background: url('https://res.cloudinary.com/dyqnvpyhs/image/upload/v1781864936/waol1ajylcq3v2jpb9pw.jpg') center/cover;"></div>
                 <div style="padding: 1.5rem;">
                     <h3 style="margin-bottom: 0.5rem;">Badminton Courts</h3>
                     <p class="text-secondary">BWF approved synthetic mats paired with anti-glare lighting for professional gameplay.</p>
