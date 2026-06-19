@@ -213,7 +213,11 @@ function getBadgeClass($status) {
 <script>
     const CSRF_TOKEN = '<?php echo $_SESSION['csrf_token']; ?>';
     function viewReceipt(filename) {
-        document.getElementById('receipt-img').src = '../uploads/payments/' + filename;
+        if (filename.startsWith('http')) {
+            document.getElementById('receipt-img').src = filename;
+        } else {
+            document.getElementById('receipt-img').src = '../uploads/payments/' + filename;
+        }
         openModal('receipt-modal');
     }
 </script>

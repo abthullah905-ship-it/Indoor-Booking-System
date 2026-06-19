@@ -19,4 +19,8 @@ define('SMTP_PASS', 'rryo oozw vchm uxbx');
 define('SMTP_PORT', 587);
 define('SMTP_FROM_EMAIL', 'noreply@alsindoor.com');
 define('SMTP_FROM_NAME', 'ALS Indoor Sports');
+// Cloudinary Configuration
+define('CLOUDINARY_CLOUD_NAME', 'dyqnvpyhs');
+define('CLOUDINARY_API_KEY', '293273325557637');
+define('CLOUDINARY_API_SECRET', 'TOfYPPMKaJbAPlnXgmHTnJZQBfw');
 ?>

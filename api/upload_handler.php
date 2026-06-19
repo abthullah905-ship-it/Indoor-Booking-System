@@ -49,23 +49,39 @@ if ($result->num_rows === 0) {
     exit;
 }
 
-$ext = match($mime_type) {
-    'image/jpeg' => 'jpg',
-    'image/png' => 'png',
-    'image/gif' => 'gif',
-    'image/webp' => 'webp',
-    default => 'jpg'
-};
+$timestamp = time();
+$signature = sha1('timestamp=' . $timestamp . CLOUDINARY_API_SECRET);
 
-$filename = 'payment_' . $booking_id . '_' . time() . '.' . $ext;
-$dest     = '../uploads/payments/' . $filename;
+$ch = curl_init('https://api.cloudinary.com/v1_1/' . CLOUDINARY_CLOUD_NAME . '/image/upload');
+$cfile = new CURLFile($tmpPath, $mime_type, $_FILES['screenshot']['name']);
+$data = [
+    'file' => $cfile,
+    'api_key' => CLOUDINARY_API_KEY,
+    'timestamp' => $timestamp,
+    'signature' => $signature
+];
 
-if (move_uploaded_file($tmpPath, $dest)) {
-    $stmt = $conn->prepare("UPDATE bookings SET payment_screenshot = ?, payment_status = 'Pending' WHERE id = ?");
-    $stmt->bind_param("si", $filename, $booking_id);
-    $stmt->execute();
-    echo json_encode(['status' => 'success', 'message' => 'Payment screenshot uploaded successfully']);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+if ($http_code === 200) {
+    $result = json_decode($response, true);
+    if (isset($result['secure_url'])) {
+        $cloudinary_url = $result['secure_url'];
+        
+        $stmt = $conn->prepare("UPDATE bookings SET payment_screenshot = ?, payment_status = 'Pending' WHERE id = ?");
+        $stmt->bind_param("si", $cloudinary_url, $booking_id);
+        $stmt->execute();
+        
+        echo json_encode(['status' => 'success', 'message' => 'Payment screenshot uploaded successfully']);
+    } else {
+        echo json_encode(['status' => 'error', 'message' => 'Cloudinary upload failed: Invalid response']);
+    }
 } else {
-    echo json_encode(['status' => 'error', 'message' => 'File upload failed']);
+    echo json_encode(['status' => 'error', 'message' => 'Cloudinary upload failed']);
 }
 ?>
